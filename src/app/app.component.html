@@ -1,0 +1,18 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+  <div class="card bg-dark text-white" style="max-width: 50rem;">
+    <img src="../assets/pictures/kyoto.jpg" class="card-img" alt="Kyoto"/>
+    <div class="card-img-overlay">
+      <h5 class="card-title">Finn Huhne</h5>
+      <p class="card-text">
+        This homepage is work in progress. More following soon!
+      </p>
+    </div>
+  </div>
+  <section class="p-4 text-center" style="background-color: white;">
+    <a role="button" style="color: {{ folder.color }};" target="_blank" rel="me" href="{{ folder.url }}" *ngFor="let folder of folders">
+      <span class="fab {{ folder.fab }} fa-2x me-3"></span>
+    </a>
+  </section>
+</div>
+
+
